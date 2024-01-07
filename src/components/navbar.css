@@ -18,9 +18,10 @@ body {
 }
 
 .navbar {
-  height: 60px;
+  height: 70px;
   background-color: #274135;
   position: relative;
+  z-index: 10;
 }
 
 .logo {
@@ -40,6 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  margin-bottom: 0rem;
 }
 
 .nav-elements ul li:not(:last-child) {
@@ -71,6 +73,7 @@ body {
 
 .nav-elements ul li.dropdown:hover .dropdown-content {
   display: block;
+  z-index: 10;
 }
 
 .dropdown-content {
@@ -126,6 +129,7 @@ body {
   .nav-elements ul {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0rem;
   }
 
   .nav-elements ul li {
