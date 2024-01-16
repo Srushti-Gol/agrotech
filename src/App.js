@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import Home from './components/Home';
+import Services from './components/Services';
+import SmartFarming from './components/SmartFarming';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
             <Routes>
             <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/sf" element={<SmartFarming />} />
             </Routes>
           </div>
         </div>

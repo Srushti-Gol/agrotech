@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import farmImage from '../assets/farm1.jpg';
-import './login.css';
+import './CSS/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Login() {

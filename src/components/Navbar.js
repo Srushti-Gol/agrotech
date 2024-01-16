@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { ReactComponent as Hamburger } from '../assets/h.svg'
-import './navbar.css'
+import './CSS/navbar.css'
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -25,7 +25,7 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li className="dropdown">
-              <NavLink to="/service">Services</NavLink>
+              <NavLink to="/services">Services</NavLink>
               <div className="dropdown-content">
                 <NavLink to="/crop-recommendation">Crop Recommendation</NavLink>
                 <NavLink to="/fertilizer-recommendation">Fertilizer Recommendation</NavLink>
@@ -38,7 +38,7 @@ const Navbar = () => {
               <NavLink to="/agribot">AgriBot</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/sf">SmartFarming</NavLink>
             </li>
             <li>
               <NavLink to="/login">SignIn</NavLink>
