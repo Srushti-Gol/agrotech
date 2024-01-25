@@ -5,6 +5,9 @@ import Login from './components/Login';
 import Home from './components/Home';
 import Services from './components/Services';
 import SmartFarming from './components/SmartFarming';
+import CropRecommendation from './components/CropRecommendation';
+import FertilizerRecommendation from './components/FertilizerRecommendation';
+import CropYieldPrediction from './components/CropYieldPrediction';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
             <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/services" element={<Services />} />
+              <Route path='/crop-recommendation' element={<CropRecommendation />}></Route>
+              <Route path='/fertilizer-recommendation' element={<FertilizerRecommendation />}></Route>
+              <Route path='/crop-yield-prediction' element={<CropYieldPrediction />}></Route>
               <Route path="/sf" element={<SmartFarming />} />
             </Routes>
           </div>

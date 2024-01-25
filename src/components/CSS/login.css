@@ -1,10 +1,14 @@
-.login-container {
+  .login-container {
     display: flex;
-    height: 90vh; /* Adjust the height as needed */
-    padding: 20px; /* Add padding to all sides */
+    height: 90vh;
+    padding: 20px; 
     overflow: hidden;
   }
   
+  .label-large {
+    font-size: 21px; 
+  }
+
   .login-image-section {
     flex: 1;
     overflow: hidden;
@@ -13,13 +17,11 @@
   .login-image-section img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire container */
+    object-fit: cover; 
   }
   
   .login-text-section {
     flex: 1;
-    /* padding-left: 60px; */
-    /* padding-right: 60px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +29,7 @@
   }
   
   .login-container .card-title {
-    margin-left: 30%; 
+    margin-left: 38%; 
   }
   
   .login-container .btn {
@@ -35,28 +37,38 @@
   }
   .login-container .btn-primary {
     background-color: #274135;
-    color: #fdf0d5;
+    color: #fef6fc;
+    border-color: rgba(14, 253, 62, 0);
   }
   
   .login-container .btn-primary:hover {
-    background-color: #5e9b50;
-    color: #fdf0d5;
-  }
-  
-
-  #email:focus {
-    border-color: #5e9b50; 
-    box-shadow: 0 0 5px rgba(94, 155, 80, 0.5); 
+    background-color:  #5e9b50;
+    color: #faf0f8;
+    border-color: rgba(0, 129, 242, 0);
   }
 
-  #password:focus {
-    border-color: #5e9b50;
-    box-shadow: 0 0 5px rgba(94, 155, 80, 0.5); 
+  .login-container label{
+    font-size: 1rem;
+    color: black;
+  }
+  #name::placeholder,#password::placeholder,#email::placeholder{
+    color: #aeaeae;
+  }
+  #email,#password,#name{
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 20px;
+    color: black;
   }
 
-  #name:focus {
-    border-color: #5e9b50;
-    box-shadow: 0 0 5px rgba(94, 155, 80, 0.5); 
+  .login-container span{
+    color: red;
+    font-weight: 700;
+  }
+  #email:focus , #password:focus , #name:focus{
+    border-color: black; 
+    box-shadow: none;
+    border-radius: 20px;
   }
 
   .underline {

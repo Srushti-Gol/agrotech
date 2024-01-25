@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import farmImage from '../assets/farm1.jpg';
 import './CSS/login.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import axios from 'axios'; 
 
 function Login() {
   const [formData, setFormData] = useState({
+    name: '',
     email: '',
     password: '',
   });
@@ -18,10 +20,20 @@ function Login() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log('Form submitted:', formData);
+
+    // const endpoint = isRegister ? 'signup' : 'login';
+
+  //   try {
+  //     const response = await axios.post(http://127.0.0.1:5000/api/${endpoint}, formData);
+  //     console.log(response.data);
+  //     // Handle success, e.g., redirect to dashboard
+  //   } catch (error) {
+  //     // setError('Invalid credentials');
+  //     // Handle error, e.g., show error message
+  //   }
+  // //Redirect User to Home page!!
   };
 
   const toggleForm = () => {
@@ -46,11 +58,12 @@ function Login() {
             >
               {isRegister && (
                 <div className="mb-3">
-                  <label className="mb-2 text-muted" htmlFor="name">
-                    Name
+                  <label className="mb-2 label-large " htmlFor="name">
+                    Name <span>*</span>
                   </label>
                   <input
                     id="name"
+                    placeholder="Enter your name"
                     type="text"
                     className="form-control"
                     name="name"
@@ -63,12 +76,13 @@ function Login() {
               )}
 
               <div className="mb-3">
-                <label className="mb-2 text-muted" htmlFor="email">
-                  E-Mail Address
+                <label className="mb-2 label-large" htmlFor="email">
+                  E-Mail Address <span>*</span>
                 </label>
                 <input
                   id="email"
-                  type="email"
+                    placeholder="Enter your Email address "
+                    type="email"
                   className="form-control"
                   name="email"
                   value={formData.email}
@@ -76,19 +90,20 @@ function Login() {
                   required
                   autoFocus
                 />
-                <div className="invalid-feedback">Email is invalid</div>
+                <div className="invalid-feedback">Email is invalid </div>
               </div>
 
               <div className="mb-3">
                 <div className="mb-2 w-100">
-                  <label className="text-muted" htmlFor="password">
-                    Password
+                  <label className=" label-large" htmlFor="password">
+                    Password <span>*</span>
                   </label>
                 </div>
                 <input
                   id="password"
                   type="password"
-                  className="form-control"
+                    placeholder="Enter Password"
+                    className="form-control"
                   name="password"
                   value={formData.password}
                   onChange={handleChange}
