@@ -12,18 +12,18 @@ import Footer from './Footer';
 const items = [
   {
     img: img1,
-    title: 'First Slide',
-    description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+    title: 'Precision Agriculture at Your Fingertips',
+    description: 'Empowering farmers with cutting-edge technology for smarter, more efficient farming practices.',
   },
   {
     img: img2,
-    title: 'Second Slide',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Maximize Your Harvest Potential',
+    description: 'From crop recommendations to yield predictions, AgroTech ensures you get the most from your fields.',
   },
   {
     img: img3,
-    title: 'Third Slide',
-    description: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+    title: 'Optimized Farming, Sustainable Results',
+    description: 'Discover the future of agriculture with features like soil analysis, plant disease detection, and more.',
   },
 ];
 
@@ -76,7 +76,7 @@ function Home() {
             <div style={{ position: 'relative' }}>
               <img src={item.img} alt={item.title} style={{ width: '100%', height: '550px' }} />
               <div className='item-container'>
-                <h1 className='item-title'>{item.title}</h1>
+                <h2 className='item-title'>{item.title}</h2>
                 <p className='item-discreption'>{item.description}</p>
               </div>
             </div>

@@ -20,12 +20,13 @@ const services = [
   {
     img: 'https://miro.medium.com/v2/resize:fit:700/1*TKUvZfHReYQvuh83B1CWPg.jpeg',
     title: 'Plant Disease Detection',
-    to:'/crop-recommendation',
+    to:'/plant-disease-detection',
     description: 'Our Plant Disease Detection service is a breakthrough in agricultural technology, utilizing machine learning to analyze photos of plant leaves and accurately predict the presence of diseases. By simply providing an image, farmers receive instant insights into the specific disease affecting their plants. Not only does the service identify the disease, but it also offers tailored solutions to overcome and manage the condition effectively. This proactive approach empowers farmers to take timely action, minimizing crop losses and promoting a healthier, more resilient agriculture ecosystem.',
   },
   {
     img: 'https://m.media-amazon.com/images/I/91+4P+1gDRL._SX569_.jpg',
     title: 'Soil Analysis',
+    to:'/soil-analysis',
     description: 'Our Soil Analysis service revolutionizes farming practices by employing advanced technology to analyze soil photos. By capturing an image of the soil, our system accurately identifies the soil type and provides valuable insights into the best crops suited for cultivation in that specific soil. This innovative approach simplifies the decision-making process for farmers, enabling them to make informed choices about crop selection based on the unique characteristics of their soil. With precise soil analysis, farmers can optimize their agricultural practices, enhance crop yields, and promote sustainable farming for long-term success.',
   },
   {
@@ -37,7 +38,7 @@ const services = [
   {
     img: 'https://media.licdn.com/dms/image/D4D12AQGov1hvhw8tZQ/article-cover_image-shrink_720_1280/0/1687595406012?e=2147483647&v=beta&t=JNcVtT2MBERCj1CMV6HQJEOuoOyCSbNLweSrymqClSE',
     title: 'AgriBot',
-    to:'/crop-recommendation',
+    to:'/agribot',
     description: 'Introducing Agribot Chat your virtual farming assistant! Farmers can now chat with Agribot, a cutting-edge AI-powered companion ready to provide instant solutions to all farming queries. Whether it\'s crop management, pest control, or general agricultural advice, Agribot is here to assist. Farmers can engage in real-time conversations, gaining valuable insights and guidance to enhance their farming practices. With Agribot Chat, connecting with agricultural expertise has never been easier, revolutionizing the way farmers access information and ensuring a smarter and more productive farming experience.',
   },
   // Add more services as needed

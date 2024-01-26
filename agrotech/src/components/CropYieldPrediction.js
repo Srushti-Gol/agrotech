@@ -878,7 +878,7 @@ function CropYieldPrediction() {
                                     </label>
                                     <input
                                         id="Area"
-                                        placeholder="Enter Area on which you grow crop"
+                                        placeholder="Enter Area in Hectares on which you grow crop"
                                         type="number"
                                         className="form-control"
                                         name="Temperature"
